@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>57216164617-bm36ebu4auuh8bq5k7fok4fu2fd05lh3.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.57216164617-bm36ebu4auuh8bq5k7fok4fu2fd05lh3</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAKoyzeV1EpwCnCG66fiSsDyzfqY0HFn5I</string>
+	<key>GCM_SENDER_ID</key>
+	<string>57216164617</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.havilaway</string>
+	<key>PROJECT_ID</key>
+	<string>havilaway</string>
+	<key>STORAGE_BUCKET</key>
+	<string>havilaway.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:57216164617:ios:8361bbc29d5ad214e7a9d8</string>
+</dict>
+</plist>

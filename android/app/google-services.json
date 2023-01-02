@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "57216164617",
+    "project_id": "havilaway",
+    "storage_bucket": "havilaway.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:57216164617:android:90121206a9169019e7a9d8",
+        "android_client_info": {
+          "package_name": "com.example.havilaway"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "57216164617-ksk87cma3qbouq8eqbjadchantvhr47i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqPX27ZB0HOvLMFxmHdSc5Sp_SYeZw95c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "57216164617-ksk87cma3qbouq8eqbjadchantvhr47i.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "57216164617-bm36ebu4auuh8bq5k7fok4fu2fd05lh3.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.havilaway"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

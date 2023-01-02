@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1000" height="1000" viewBox="0 0 1000 1000" xml:space="preserve">
+<desc>Created with Fabric.js 3.5.0</desc>
+<defs>
+</defs>
+<rect x="0" y="0" width="100%" height="100%" fill="#ffffff"/>
+<g transform="matrix(13.9147 0 0 13.9147 500.0011 500.0011)" id="486979">
+<g style="" vector-effect="non-scaling-stroke">
+		<g transform="matrix(0.1333 0 0 -0.1333 -15.4853 -5.0017)">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" translate(-128.8924, -282.4636)" d="M 72 460 c -58 -36 -86 -127 -61 -199 c 12 -35 16 -36 43 -16 c 20 15 76 21 76 8 c 0 -4 -13 -21 -30 -38 l -30 -31 l 50 -49 l 50 -49 l 47 47 c 37 37 45 49 35 59 c -9 9 -20 5 -47 -22 l -35 -34 l -22 22 l -22 22 l 34 36 l 35 35 l -29 26 c -25 21 -37 25 -78 21 l -48 -5 l 0 31 c 0 71 65 130 120 109 c 23 -9 32 -8 40 2 c 9 11 5 17 -19 29 c -40 21 -69 20 -109 -4 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.1333 0 0 -0.1333 14.4003 -0.9702)">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" translate(-353.0345, -252.2202)" d="M 292 460 c -52 -32 -61 -79 -24 -122 c 17 -20 44 -23 73 -7 c 28 15 6 41 -27 33 c -21 -6 -24 -3 -24 25 c 0 56 64 69 110 22 c 34 -34 45 -68 35 -118 c -5 -28 -30 -60 -113 -145 c -82 -84 -103 -111 -94 -120 c 10 -10 36 11 118 92 c 109 108 134 146 134 202 c -1 50 -34 115 -72 138 c -42 25 -74 25 -116 0 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.1333 0 0 -0.1333 18.1559 -6.021)">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" translate(-381.1744, -290.153)" d="M 365 300 c -8 -14 3 -30 21 -30 c 8 0 14 9 14 20 c 0 21 -24 28 -35 10 z" stroke-linecap="round"/>
+</g>
+</g>
+</g>
+</svg>
