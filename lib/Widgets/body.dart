@@ -1,3 +1,4 @@
+import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../Extensions/constant.dart';
@@ -34,14 +35,15 @@ class Body extends StatelessWidget {
               Container(
                 width: size.width,
                 decoration: BoxDecoration(
-                    color: Color.fromARGB(99, 0, 0, 0),
+                  color: Color.fromARGB(123, 0, 0, 0),
                 ),
                 child: Padding(
-                  padding: const EdgeInsets.only(left:24.0),
+                  padding: const EdgeInsets.only(left: 24.0),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
+                      
                       Padding(
                         padding: const EdgeInsets.only(
                             left: 24.0, top: 44, right: 24),
@@ -53,23 +55,28 @@ class Body extends StatelessWidget {
                       ),
                       Padding(
                         padding: const EdgeInsets.only(left: 24.0, right: 24),
-                        child: Text("en temps et en heure.".toUpperCase(),
-                            style: GoogleFonts.poppins(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 40,
-                                color: Color.fromARGB(255, 255, 255, 255))),
+                        child: SizedBox(
+                        width: size.width/1.2,
+                        child: DefaultTextStyle(
+                          style: GoogleFonts.poppins(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 22,
+                              color: Color.fromARGB(255, 245, 245, 245)),
+                          child: AnimatedTextKit(
+                            isRepeatingAnimation: false,
+                            repeatForever: false,
+                            animatedTexts: [
+                              TypewriterAnimatedText(
+                                  'Des DPNI aux tests génétiques en passant par les biopsies,\nHavila Way vous accompagne dans vos diagnostics.'),
+                            ],
+                            onTap: () {
+                              print("Tap Event");
+                            },
+                          ),
+                        ),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.only(
-                            left: 24.0, bottom: 44, right: 24),
-                        child: Text(
-                            "Des DPNI aux tests génétiques en passant par les biopsies,\nHavila Way vous accompagne dans vos diagnostics."
-                                .toUpperCase(),
-                            style: GoogleFonts.poppins(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 22,
-                                color: Color.fromARGB(255, 255, 255, 255))),
                       ),
+                     Padding(padding: EdgeInsets.all(20))
                     ],
                   ),
                 ),

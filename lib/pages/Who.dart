@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:math';
+import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:auto_animated/auto_animated.dart';
 import 'package:dropdown_button2/dropdown_button2.dart';
 import 'package:havilaway/Extensions/hover_extensions.dart';
@@ -207,12 +208,10 @@ class _AboutState extends State<About> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
-                            
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: [
-                               
                                 Padding(
                                   padding: const EdgeInsets.only(bottom: 10.0),
                                   child: Text(
@@ -223,15 +222,15 @@ class _AboutState extends State<About> {
                                           fontWeight: FontWeight.bold)),
                                 ),
                                 Padding(
-                                  padding: const EdgeInsets.only(bottom:0.0),
+                                  padding: const EdgeInsets.only(bottom: 0.0),
                                   child: Container(
                                     child: Text(
                                         "Basée en Angleterre , la société HAVILA WAY a pour mission de mener à bien la gestion administrative et financière afin d’emmener l’activité médical à son momentum mais aussi envisager les voix et moyens pour exporter l’activité dans d’autres pays d’Afrique . HAVILA WAY se veut être la relève et l’expansion de l’activité entreprise par Madame TSHABU en ayant une etroite collaboration avec elle.",
                                         textAlign: TextAlign.justify,
                                         style: GoogleFonts.poppins(
                                           fontSize: 20,
-                                          color:
-                                              Color.fromARGB(255, 255, 255, 255),
+                                          color: Color.fromARGB(
+                                              255, 255, 255, 255),
                                         )),
                                   ),
                                 ),
@@ -370,11 +369,14 @@ class _AboutState extends State<About> {
                                     borderRadius: BorderRadius.circular(25),
                                     child: TextButton(
                                       style: ButtonStyle(
-                                        padding: MaterialStateProperty.all(EdgeInsets.symmetric(
-                                          horizontal: 25, vertical: 15),),
-                                        backgroundColor:  MaterialStateProperty.all(Color.fromARGB(255, 92, 24, 8)),
+                                        padding: MaterialStateProperty.all(
+                                          EdgeInsets.symmetric(
+                                              horizontal: 25, vertical: 15),
+                                        ),
+                                        backgroundColor:
+                                            MaterialStateProperty.all(
+                                                Color.fromARGB(255, 92, 24, 8)),
                                       ),
-                                      
                                       onPressed: () {
                                         Timer(
                                           Duration(milliseconds: 500),
@@ -389,7 +391,7 @@ class _AboutState extends State<About> {
                                               color: Colors.white)),
                                     ))),
                             Padding(padding: EdgeInsets.all(8)),
-                             GestureDetector(
+                            GestureDetector(
                               onTap: () {
                                 Timer(
                                   Duration(milliseconds: 500),
@@ -426,8 +428,8 @@ class _AboutState extends State<About> {
                                   onChanged: (value) {
                                     setState(() {
                                       selectedValue = value as String;
-                                                                                                    Navigator.of(context).pushNamed(Landing.route);
-
+                                      Navigator.of(context)
+                                          .pushNamed(Landing.route);
                                     });
                                   },
                                   buttonHeight: 40,
@@ -468,49 +470,51 @@ class _AboutState extends State<About> {
                         children: <Widget>[
                           // It will cover 1/3 of free spaces
 
-                          Padding(
-                            padding: const EdgeInsets.all(20),
-                            child: Container(
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.end,
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: <Widget>[
-                                  Padding(
-                                      padding: EdgeInsets.only(bottom: 130)),
-                                  Container(
-                                    width: size.width * 0.5,
-                                    height: size.height / 2.8,
-                                    child: FittedBox(
-                                      child: Column(
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.start,
-                                        children: [
-                                          Padding(
-                                            padding: const EdgeInsets.only(
-                                                left: 24.0),
-                                            child: Text("QUI".toUpperCase(),
-                                                style: GoogleFonts.poppins(
-                                                    fontWeight: FontWeight.bold,
-                                                    fontSize: 78,
-                                                    color: Color.fromARGB(
-                                                        255, 255, 255, 255))),
+                          Container(
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.end,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: <Widget>[
+                                Padding(
+                                    padding: EdgeInsets.only(bottom: 130)),
+                                Container(
+                                  width: MediaQuery.of(context).size.width,
+                                  color: Color.fromARGB(171, 0, 0, 0),
+                                  child: FittedBox(
+                                    child: Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        Padding(
+                                          padding: const EdgeInsets.only(top:24,bottom: 24,
+                                              left: 24.0, right: 24),
+                                          child: SizedBox(
+                                            width: size.width / 1.2,
+                                            child: DefaultTextStyle(
+                                              style: GoogleFonts.poppins(
+                                                  fontWeight: FontWeight.bold,
+                                                  fontSize: 50,
+                                                  color: Color.fromARGB(
+                                                      255, 255, 255, 255)),
+                                              child: AnimatedTextKit(
+                                                isRepeatingAnimation: false,
+                                                repeatForever: false,
+                                                animatedTexts: [
+                                                  TypewriterAnimatedText(
+                                                      "QUI SOMMES-NOUS ?")
+                                                ],
+                                                onTap: () {
+                                                  print("Tap Event");
+                                                },
+                                              ),
+                                            ),
                                           ),
-                                          Padding(
-                                            padding: const EdgeInsets.only(
-                                                left: 24.0),
-                                            child: Text(
-                                                "SOMMES-NOUS ?".toUpperCase(),
-                                                style: GoogleFonts.poppins(
-                                                    fontWeight: FontWeight.bold,
-                                                    fontSize: 78,
-                                                    color: Color(0xff1E2036))),
-                                          ),
-                                        ],
-                                      ),
+                                        ),
+                                      ],
                                     ),
                                   ),
-                                ],
-                              ),
+                                ),
+                              ],
                             ),
                           )
 

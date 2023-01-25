@@ -67,6 +67,7 @@ dependencies:
   file_picker: ^5.2.2
   reactive_forms: ^14.1.0
   awesome_snackbar_content: ^0.0.8
+  animated_text_kit: ^4.2.2
 
 dev_dependencies:
   flutter_test:

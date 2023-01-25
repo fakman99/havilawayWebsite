@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:math';
+import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:auto_animated/auto_animated.dart';
 import 'package:dropdown_button2/dropdown_button2.dart';
 import 'package:flutter_expanded_tile/flutter_expanded_tile.dart';
@@ -243,7 +244,7 @@ class _MoyenScreensState extends State<MoyenScreens> {
                                       "- La conservation dans les meilleures conditions permet des résultats d’analyses plus précis. L’altération peut avoir de lourdes conséquences.",
                                       textAlign: TextAlign.justify,
                                       style: GoogleFonts.poppins(
-                                        fontSize: 18,
+                                        fontSize: 20,
                                         color: Colors.white,
                                       )),
                                 ),
@@ -252,7 +253,7 @@ class _MoyenScreensState extends State<MoyenScreens> {
                                       "- Une perte peut avoir des conséquences retardant une potentielle thérapie.",
                                       textAlign: TextAlign.justify,
                                       style: GoogleFonts.poppins(
-                                        fontSize: 18,
+                                        fontSize: 20,
                                         color: Colors.white,
                                       )),
                                 ),
@@ -260,7 +261,7 @@ class _MoyenScreensState extends State<MoyenScreens> {
                                   child: Text(
                                     "- La potentielle présence d’agents pathogène consiste en un risque pour les environnements par lesquels ils transitent mais un risque d’exposition pour les collaborateurs de la supply chain",
                                     style: GoogleFonts.poppins(
-                                      fontSize: 18,
+                                      fontSize: 20,
                                       color: Colors.white,
                                     ),
                                     textAlign: TextAlign.justify,
@@ -303,7 +304,7 @@ class _MoyenScreensState extends State<MoyenScreens> {
                               "Les problèmes d’acheminement n’arrivent que de manière exceptionnelle (période de grèves de compagnie aérienne, mauvais acheminement par les transporteurs…). Si un  problème se pose, Havila Way prend en charge les frais que peut engendrer ce type de problème comme un nouveau prélèvement, un nouvel envoi, etc. Les délais d’envoi de résultats sont de 2 à 3 jours au maximum (dès la prise de vos prélèvements). Les résultats vous sont envoyés directement par email. Les résultats fiables de nos laboratoires basés en Belgique vous permettront d’entreprendre les soins nécessaires pour vos patients. Les résultats sont envoyés directement après analyse au fur et à mesure. Havila Way connaît l’importance d’un délai court dans le traitement médical. Dans l’hypothèse où une nouvelle analyse du prélèvement est nécessaire, les échantillons peuvent être conservés jusqu’à 4 semaines dans le but d’éviter à nouveau les délais de transport.",
                               textAlign: TextAlign.justify,
                               style: GoogleFonts.poppins(
-                                fontSize: 22,
+                                fontSize: 20,
                                 color: Color.fromARGB(255, 48, 48, 48),
                               )),
                         ),
@@ -313,7 +314,7 @@ class _MoyenScreensState extends State<MoyenScreens> {
                               "Une réglementation stricte entoure le transport à toutes les étapes, de la prise du prélèvement à la réception en laboratoire. En effet, des règlements et/ou recommandations ont été dictés par des groupes internationaux. Ces règlements et recommandations permettent de réduire les risques ou de les maîtriser. Ces indications peuvent porter étiquetage, l’emballage, la documentation à fournir. Pour Havila Way, ces indications ne sont pas un fardeau réglementaire mais bien une nécessité.",
                               textAlign: TextAlign.justify,
                               style: GoogleFonts.poppins(
-                                fontSize: 22,
+                                fontSize: 20,
                                 color: Color.fromARGB(255, 48, 48, 48),
                               )),
                         ),
@@ -323,7 +324,7 @@ class _MoyenScreensState extends State<MoyenScreens> {
                               "Il est intéressant de souligner que ce type d’indications sont revues de manière systématique tous les deux ans. Et donc prennent également en compte les avancées technologiques. Mais elles prennent également en compte la réalité du terrain. Ainsi une recommandation peut divergé entre deux pays africains pour être proches de la réalité et de certaines potentielles contraintes.",
                               textAlign: TextAlign.justify,
                               style: GoogleFonts.poppins(
-                                fontSize: 22,
+                                fontSize: 20,
                                 color: Color.fromARGB(255, 48, 48, 48),
                               )),
                         ),
@@ -560,7 +561,7 @@ class _MoyenScreensState extends State<MoyenScreens> {
                                           "De nombreux éléments doivent être effectués par l’expéditeur comme l’identification, emballage, le contrôle des températures dans un premier temps.",
                                           textAlign: TextAlign.justify,
                                           style: GoogleFonts.poppins(
-                                            fontSize: 22,
+                                            fontSize: 14,
                                             color: Color.fromARGB(
                                                 255, 255, 255, 255),
                                           )),
@@ -571,7 +572,7 @@ class _MoyenScreensState extends State<MoyenScreens> {
                                           "Dans un second temps, une préparation de tous les documents nécessaires à l’envoi.",
                                           textAlign: TextAlign.justify,
                                           style: GoogleFonts.poppins(
-                                            fontSize: 22,
+                                            fontSize: 14,
                                             color: Color.fromARGB(
                                                 255, 255, 255, 255),
                                           )),
@@ -582,7 +583,7 @@ class _MoyenScreensState extends State<MoyenScreens> {
                                           "Ensuite, notifier au destinataire le contenu du transport et les modalités du transport. La préparation des lettres de transports aériens et les autres modalités pour le transport sur le territoire belge (transport sécurisé et direct dans les conditions de sécurité nécessaires).",
                                           textAlign: TextAlign.justify,
                                           style: GoogleFonts.poppins(
-                                            fontSize: 22,
+                                            fontSize: 14,
                                             color: Color.fromARGB(
                                                 255, 255, 255, 255),
                                           )),
@@ -590,25 +591,16 @@ class _MoyenScreensState extends State<MoyenScreens> {
                                     Text(""),
                                     Container(
                                       child: Text(
-                                          "C’est à ces niveaux que Havila Way dévoile toute son expertise. S’il vous est demandé de suivre certaines règles lors de la prise de l’échantillon, Havila Way prend le relais pour toutes les autres étapes à suivre.",
+                                          "C’est à ces niveaux que Havila Way dévoile toute son expertise. S’il vous est demandé de suivre certaines règles lors de la prise de l’échantillon, Havila Way prend le relais pour toutes les autres étapes à suivre.Et vous laisse au soin de votre activité principale en toute sérénité, la médecine.",
                                           textAlign: TextAlign.justify,
                                           style: GoogleFonts.poppins(
-                                            fontSize: 22,
+                                            fontSize: 14,
                                             color: Color.fromARGB(
                                                 255, 255, 255, 255),
                                           )),
                                     ),
                                     Text(""),
-                                    Container(
-                                      child: Text(
-                                          "Et vous laisse au soin de votre activité principale en toute sérénité, la médecine.",
-                                          textAlign: TextAlign.justify,
-                                          style: GoogleFonts.poppins(
-                                            fontSize: 22,
-                                            color: Color.fromARGB(
-                                                255, 255, 255, 255),
-                                          )),
-                                    ),
+                                    
                                   ],
                                 ),
                                 Padding(
@@ -644,7 +636,7 @@ class _MoyenScreensState extends State<MoyenScreens> {
                                     "Nos transporteurs ont eux aussi à leur charges certaines tâches. C’est en gardant ceci en tête et la préciosité de vos échantillons que nous les avons sélectionnés.",
                                     textAlign: TextAlign.justify,
                                     style: GoogleFonts.poppins(
-                                      fontSize: 22,
+                                      fontSize: 20,
                                       color: Color.fromARGB(255, 255, 255, 255),
                                     )),
                               ),
@@ -654,7 +646,7 @@ class _MoyenScreensState extends State<MoyenScreens> {
                                     "Ils effectuent en autre un trajet approprié, c’est-à-dire le plus court. Les vérifications de documentations et les contrôles exigés en matière de marquage et d’étiquetage.",
                                     textAlign: TextAlign.justify,
                                     style: GoogleFonts.poppins(
-                                      fontSize: 22,
+                                      fontSize: 20,
                                       color: Color.fromARGB(255, 255, 255, 255),
                                     )),
                               ),
@@ -664,7 +656,7 @@ class _MoyenScreensState extends State<MoyenScreens> {
                                     "En constante collaboration avec ces derniers, Havila Way peut bénéficier de leur expertise pour de nouveaux types d’envois ou de nouvelles règles en application.",
                                     textAlign: TextAlign.justify,
                                     style: GoogleFonts.poppins(
-                                      fontSize: 22,
+                                      fontSize: 20,
                                       color: Color.fromARGB(255, 255, 255, 255),
                                     )),
                               ),
@@ -1662,36 +1654,54 @@ class _MoyenScreensState extends State<MoyenScreens> {
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
+
                               Container(
-                                width: size.width * 0.5,
-                                height: size.height / 2.8,
-                                child: FittedBox(
-                                  child: Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      Padding(
-                                        padding:
-                                            const EdgeInsets.only(left: 24.0),
-                                        child: Text("Découvrez".toUpperCase(),
-                                            style: GoogleFonts.poppins(
-                                                fontWeight: FontWeight.bold,
-                                                fontSize: 78,
-                                                color: Color(0xff1E2036))),
-                                      ),
-                                      Padding(
-                                        padding:
-                                            const EdgeInsets.only(left: 24.0),
-                                        child: Text("NOS MOYENS".toUpperCase(),
-                                            style: GoogleFonts.poppins(
-                                                fontWeight: FontWeight.bold,
-                                                fontSize: 78,
-                                                color: Colors.white)),
-                                      ),
-                                    ],
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.end,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: <Widget>[
+                                Padding(
+                                    padding: EdgeInsets.only(bottom: 130)),
+                                Container(
+                                  width: MediaQuery.of(context).size.width,
+                                  color: Color.fromARGB(171, 0, 0, 0),
+                                  child: FittedBox(
+                                    child: Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        Padding(
+                                          padding: const EdgeInsets.only(top:24,bottom: 24,
+                                              left: 24.0, right: 24),
+                                          child: SizedBox(
+                                            width: size.width / 1.2,
+                                            child: DefaultTextStyle(
+                                              style: GoogleFonts.poppins(
+                                                  fontWeight: FontWeight.bold,
+                                                  fontSize: 50,
+                                                  color: Color.fromARGB(
+                                                      255, 255, 255, 255)),
+                                              child: AnimatedTextKit(
+                                                isRepeatingAnimation: false,
+                                                repeatForever: false,
+                                                animatedTexts: [
+                                                  TypewriterAnimatedText(
+                                                      "NOS MOYENS")
+                                                ],
+                                                onTap: () {
+                                                  print("Tap Event");
+                                                },
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
                                   ),
                                 ),
-                              ),
+                              ],
+                            ),
+                          )
                             ],
                           ),
 
@@ -1803,7 +1813,7 @@ class _MoyenScreensState extends State<MoyenScreens> {
                               "Les problèmes d’acheminement n’arrivent que de manière exceptionnelle (période de grèves de compagnie aérienne, mauvais acheminement par les transporteurs…). Si un  problème se pose, Havila Way prend en charge les frais que peut engendrer ce type de problème comme un nouveau prélèvement, un nouvel envoi, etc. Les délais d’envoi de résultats sont de 2 à 3 jours au maximum (dès la prise de vos prélèvements). Les résultats vous sont envoyés directement par email. Les résultats fiables de nos laboratoires basés en Belgique vous permettront d’entreprendre les soins nécessaires pour vos patients. Les résultats sont envoyés directement après analyse au fur et à mesure. Havila Way connaît l’importance d’un délai court dans le traitement médical. Dans l’hypothèse où une nouvelle analyse du prélèvement est nécessaire, les échantillons peuvent être conservés jusqu’à 4 semaines dans le but d’éviter à nouveau les délais de transport.",
                               textAlign: TextAlign.justify,
                               style: GoogleFonts.poppins(
-                                fontSize: 22,
+                                fontSize: 20,
                                 color: Color.fromARGB(255, 48, 48, 48),
                               )),
                         ),
@@ -1814,7 +1824,7 @@ class _MoyenScreensState extends State<MoyenScreens> {
                               "Une réglementation stricte entoure le transport à toutes les étapes, de la prise du prélèvement à la réception en laboratoire. En effet, des règlements et/ou recommandations ont été dictés par des groupes internationaux. Ces règlements et recommandations permettent de réduire les risques ou de les maîtriser. Ces indications peuvent porter étiquetage, l’emballage, la documentation à fournir. Pour Havila Way, ces indications ne sont pas un fardeau réglementaire mais bien une nécessité.",
                               textAlign: TextAlign.justify,
                               style: GoogleFonts.poppins(
-                                fontSize: 22,
+                                fontSize: 20,
                                 color: Color.fromARGB(255, 48, 48, 48),
                               )),
                         ),
@@ -1825,7 +1835,7 @@ class _MoyenScreensState extends State<MoyenScreens> {
                               "Il est intéressant de souligner que ce type d’indications sont revues de manière systématique tous les deux ans. Et donc prennent également en compte les avancées technologiques. Mais elles prennent également en compte la réalité du terrain. Ainsi une recommandation peut divergé entre deux pays africains pour être proches de la réalité et de certaines potentielles contraintes.",
                               textAlign: TextAlign.justify,
                               style: GoogleFonts.poppins(
-                                fontSize: 22,
+                                fontSize: 20,
                                 color: Color.fromARGB(255, 48, 48, 48),
                               )),
                         ),
@@ -1929,7 +1939,7 @@ class _MoyenScreensState extends State<MoyenScreens> {
                                                               TextAlign.justify,
                                                           style: GoogleFonts
                                                               .poppins(
-                                                            fontSize: 16,
+                                                            fontSize: 18,
                                                             color:
                                                                 Color.fromARGB(
                                                                     255,
@@ -1966,7 +1976,7 @@ class _MoyenScreensState extends State<MoyenScreens> {
                                                               TextAlign.justify,
                                                           style: GoogleFonts
                                                               .poppins(
-                                                            fontSize: 16,
+                                                            fontSize: 18,
                                                             color:
                                                                 Color.fromARGB(
                                                                     255,
@@ -2003,7 +2013,7 @@ class _MoyenScreensState extends State<MoyenScreens> {
                                                               TextAlign.justify,
                                                           style: GoogleFonts
                                                               .poppins(
-                                                            fontSize: 16,
+                                                            fontSize: 18,
                                                             color:
                                                                 Color.fromARGB(
                                                                     255,
@@ -2040,7 +2050,7 @@ class _MoyenScreensState extends State<MoyenScreens> {
                     child: Column(
                       children: [
                         Column(
-                          mainAxisAlignment: MainAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: <Widget>[
                             Padding(
@@ -2059,76 +2069,67 @@ class _MoyenScreensState extends State<MoyenScreens> {
                                 Column(
                                   children: [
                                     Container(
-                                      width: size.width / 3,
+                                      width: size.width / 1.15,
                                       child: Text(
                                           "De nombreux éléments doivent être effectués par l’expéditeur comme l’identification, emballage, le contrôle des températures dans un premier temps.",
                                           textAlign: TextAlign.justify,
                                           style: GoogleFonts.poppins(
-                                            fontSize: 22,
+                                            fontSize: 20,
                                             color: Color.fromARGB(
                                                 255, 255, 255, 255),
                                           )),
                                     ),
                                     Text(""),
                                     Container(
-                                      width: size.width / 3,
+                                      width: size.width / 1.15,
                                       child: Text(
                                           "Dans un second temps, une préparation de tous les documents nécessaires à l’envoi.",
                                           textAlign: TextAlign.justify,
                                           style: GoogleFonts.poppins(
-                                            fontSize: 22,
+                                            fontSize: 20,
                                             color: Color.fromARGB(
                                                 255, 255, 255, 255),
                                           )),
                                     ),
                                     Text(""),
                                     Container(
-                                      width: size.width / 3,
+                                      width: size.width / 1.15,
                                       child: Text(
                                           "Ensuite, notifier au destinataire le contenu du transport et les modalités du transport. La préparation des lettres de transports aériens et les autres modalités pour le transport sur le territoire belge (transport sécurisé et direct dans les conditions de sécurité nécessaires).",
                                           textAlign: TextAlign.justify,
                                           style: GoogleFonts.poppins(
-                                            fontSize: 22,
+                                            fontSize: 20,
                                             color: Color.fromARGB(
                                                 255, 255, 255, 255),
                                           )),
                                     ),
                                     Text(""),
                                     Container(
-                                      width: size.width / 3,
+                                      width: size.width / 1.15,
                                       child: Text(
                                           "C’est à ces niveaux que Havila Way dévoile toute son expertise. S’il vous est demandé de suivre certaines règles lors de la prise de l’échantillon, Havila Way prend le relais pour toutes les autres étapes à suivre.",
                                           textAlign: TextAlign.justify,
                                           style: GoogleFonts.poppins(
-                                            fontSize: 22,
+                                            fontSize: 20,
                                             color: Color.fromARGB(
                                                 255, 255, 255, 255),
                                           )),
                                     ),
                                     Text(""),
                                     Container(
-                                      width: size.width / 3,
+                                      width: size.width / 1.15,
                                       child: Text(
                                           "Et vous laisse au soin de votre activité principale en toute sérénité, la médecine.",
                                           textAlign: TextAlign.justify,
                                           style: GoogleFonts.poppins(
-                                            fontSize: 22,
+                                            fontSize: 20,
                                             color: Color.fromARGB(
                                                 255, 255, 255, 255),
                                           )),
                                     ),
                                   ],
                                 ),
-                                Padding(
-                                  padding: const EdgeInsets.all(12.0),
-                                  child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(8.0),
-                                    child: Image.asset("assets/images/p1.jpg",
-                                        width: screenSize.width / 2.5,
-                                        height: screenSize.height / 2.5,
-                                        fit: BoxFit.cover),
-                                  ),
-                                ),
+                                
                               ],
                             ),
 
@@ -2136,49 +2137,51 @@ class _MoyenScreensState extends State<MoyenScreens> {
                           ],
                         ),
                         Padding(
-                          padding: const EdgeInsets.only(top: 25.0),
+                          padding: const EdgeInsets.only(top: 50.0),
                           child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
+                                                            Text(""),
+
                               Text("Nos Transporteurs".toUpperCase(),
                                   style: GoogleFonts.poppins(
                                       fontSize: 26,
                                       color: Colors.white,
                                       fontWeight: FontWeight.bold)),
-                              Text(""),
                               Container(
-                                width: size.width / 1.5,
+                                width: size.width / 1.15,
                                 child: Text(
                                     "Nos transporteurs ont eux aussi à leur charges certaines tâches. C’est en gardant ceci en tête et la préciosité de vos échantillons que nous les avons sélectionnés.",
                                     textAlign: TextAlign.justify,
                                     style: GoogleFonts.poppins(
-                                      fontSize: 22,
+                                      fontSize: 20,
                                       color: Color.fromARGB(255, 255, 255, 255),
                                     )),
                               ),
                               Text(""),
                               Container(
-                                width: size.width / 1.5,
+                                width: size.width / 1.15,
                                 child: Text(
                                     "Ils effectuent en autre un trajet approprié, c’est-à-dire le plus court. Les vérifications de documentations et les contrôles exigés en matière de marquage et d’étiquetage.",
                                     textAlign: TextAlign.justify,
                                     style: GoogleFonts.poppins(
-                                      fontSize: 22,
+                                      fontSize: 20,
                                       color: Color.fromARGB(255, 255, 255, 255),
                                     )),
                               ),
                               Text(""),
                               Container(
-                                width: size.width / 1.5,
+                                width: size.width / 1.15,
                                 child: Text(
                                     "En constante collaboration avec ces derniers, Havila Way peut bénéficier de leur expertise pour de nouveaux types d’envois ou de nouvelles règles en application.",
                                     textAlign: TextAlign.justify,
                                     style: GoogleFonts.poppins(
-                                      fontSize: 22,
+                                      fontSize: 20,
                                       color: Color.fromARGB(255, 255, 255, 255),
                                     )),
                               ),
+                              Text("")
                             ],
                           ),
                         ),
@@ -2207,7 +2210,7 @@ class _MoyenScreensState extends State<MoyenScreens> {
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
                               Container(
-                                width: size.width / 3,
+                                width: size.width / 2.5,
                                 child: Column(
                                   children: [
                                     ExpandedTile(
@@ -2602,7 +2605,7 @@ class _MoyenScreensState extends State<MoyenScreens> {
                                 ),
                               ),
                               Container(
-                                  width: size.width / 3,
+                                  width: size.width / 2.5,
                                   child: Column(
                                     children: [
                                       ExpandedTile(

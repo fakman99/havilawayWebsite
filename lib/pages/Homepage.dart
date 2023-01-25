@@ -160,12 +160,14 @@ class _HomeScreenState extends State<HomeScreen> {
                   decoration:
                       BoxDecoration(color: Color.fromARGB(255, 224, 224, 224)),
                   child: Padding(
+                  
                     padding: const EdgeInsets.only(
                         left: 22.0, right: 22, top: 44, bottom: 44),
                     child: Center(
                       child: Container(
                         width: size.width / 1.1,
                         child: ClipRRect(
+                        
                           borderRadius: BorderRadius.circular(16.0),
                           child: Container(
                               color: Color(0xff1E2036),
@@ -195,15 +197,15 @@ class _HomeScreenState extends State<HomeScreen> {
                                                           8.0),
                                                   child: SvgPicture.asset(
                                                       "assets/logo3.svg",
-                                                      width: 175,
-                                                      height: 175,
+                                                      width: 150,
+                                                      height: 150,
                                                       fit: BoxFit.cover),
                                                 ),
                                                 Text("Résultats en express",
                                                     textAlign:
                                                         TextAlign.justify,
                                                     style: GoogleFonts.poppins(
-                                                      fontSize: 25,
+                                                      fontSize: 22,
                                                       color: Color.fromARGB(
                                                           255, 255, 255, 255),
                                                     )),
@@ -215,7 +217,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                                           TextAlign.justify,
                                                       style:
                                                           GoogleFonts.poppins(
-                                                        fontSize: 16,
+                                                        fontSize: 14,
                                                         color: Color.fromARGB(
                                                             255, 255, 255, 255),
                                                       )),
@@ -234,15 +236,15 @@ class _HomeScreenState extends State<HomeScreen> {
                                                           8.0),
                                                   child: SvgPicture.asset(
                                                       "assets/logo4.svg",
-                                                      width: 175,
-                                                      height: 175,
+                                                      width: 150,
+                                                      height: 150,
                                                       fit: BoxFit.cover),
                                                 ),
                                                 Text("Haute précision",
                                                     textAlign:
                                                         TextAlign.justify,
                                                     style: GoogleFonts.poppins(
-                                                      fontSize: 25,
+                                                      fontSize: 22,
                                                       color: Color.fromARGB(
                                                           255, 255, 255, 255),
                                                     )),
@@ -254,7 +256,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                                           TextAlign.justify,
                                                       style:
                                                           GoogleFonts.poppins(
-                                                        fontSize: 16,
+                                                        fontSize: 14,
                                                         color: Color.fromARGB(
                                                             255, 255, 255, 255),
                                                       )),
@@ -273,15 +275,15 @@ class _HomeScreenState extends State<HomeScreen> {
                                                           8.0),
                                                   child: SvgPicture.asset(
                                                       "assets/logo.svg",
-                                                      width: 175,
-                                                      height: 175,
+                                                      width: 150,
+                                                      height: 150,
                                                       fit: BoxFit.cover),
                                                 ),
                                                 Text(
                                                     "Résultats par voie électronique",
                                                     textAlign: TextAlign.center,
                                                     style: GoogleFonts.poppins(
-                                                      fontSize: 25,
+                                                      fontSize: 22,
                                                       color: Color.fromARGB(
                                                           255, 255, 255, 255),
                                                     )),
@@ -293,7 +295,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                                           TextAlign.justify,
                                                       style:
                                                           GoogleFonts.poppins(
-                                                        fontSize: 16,
+                                                        fontSize: 14,
                                                         color: Color.fromARGB(
                                                             255, 255, 255, 255),
                                                       )),
@@ -312,15 +314,15 @@ class _HomeScreenState extends State<HomeScreen> {
                                                           8.0),
                                                   child: SvgPicture.asset(
                                                       "assets/logo2.svg",
-                                                      width: 175,
-                                                      height: 175,
+                                                      width: 150,
+                                                      height: 150,
                                                       fit: BoxFit.cover),
                                                 ),
                                                 Text("Circuit",
                                                     textAlign:
                                                         TextAlign.justify,
                                                     style: GoogleFonts.poppins(
-                                                      fontSize: 25,
+                                                      fontSize: 22,
                                                       color: Color.fromARGB(
                                                           255, 255, 255, 255),
                                                     )),
@@ -332,7 +334,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                                           TextAlign.justify,
                                                       style:
                                                           GoogleFonts.poppins(
-                                                        fontSize: 16,
+                                                        fontSize: 14,
                                                         color: Color.fromARGB(
                                                             255, 255, 255, 255),
                                                       )),
@@ -374,10 +376,10 @@ class _HomeScreenState extends State<HomeScreen> {
                   decoration: BoxDecoration(
                       color: Colors.black), //Color.fromARGB(255, 9, 13, 53)
                   child: Padding(
-                    padding: const EdgeInsets.all(20.0),
+                    padding: const EdgeInsets.only(top:20.0,left:20,right: 20),
                     child: Column(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      crossAxisAlignment: CrossAxisAlignment.center,
                       children: <Widget>[
                         Padding(
                           padding: const EdgeInsets.only(top: 24.0, left: 24),
@@ -387,6 +389,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                   color: Colors.white,
                                   fontWeight: FontWeight.bold)),
                         ),
+                        Padding(padding: EdgeInsets.all(20)),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.center,
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -400,7 +403,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                         "Basée en Angleterre , la société HAVILA WAY a pour mission de mener à bien la gestion administrative et financière afin d’emmener l’activité médical à son momentum mais aussi envisager les voix et moyens pour exporter l’activité dans d’autres pays d’Afrique.",
                                         textAlign: TextAlign.justify,
                                         style: GoogleFonts.poppins(
-                                          fontSize: 18,
+                                          fontSize: 14,
                                           color: Color.fromARGB(
                                               255, 255, 255, 255),
                                         )),
@@ -423,7 +426,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                   children: [
                                     Text("Nos laboratoires".toUpperCase(),
                                         style: GoogleFonts.poppins(
-                                            fontSize: 26,
+                                            fontSize: 22,
                                             color: Colors.white,
                                             fontWeight: FontWeight.bold)),
                                     Padding(
@@ -434,7 +437,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                             "Toujours avec le même soin, et avec le souci de rester proche des prescripteurs et des patients. Qualité, rapidité, disponibilité et support médical forment le carré gagnant de nos laboratoires.",
                                             textAlign: TextAlign.justify,
                                             style: GoogleFonts.poppins(
-                                              fontSize: 18,
+                                              fontSize: 14,
                                               color: Color.fromARGB(
                                                   255, 255, 255, 255),
                                             )),
@@ -692,8 +695,8 @@ class _HomeScreenState extends State<HomeScreen> {
                                                   BorderRadius.circular(8.0),
                                               child: SvgPicture.asset(
                                                   "assets/logo3.svg",
-                                                  width: 175,
-                                                  height: 175,
+                                                  width: 150,
+                                                  height: 150,
                                                   fit: BoxFit.cover),
                                             ),
                                             ClipRRect(
@@ -701,8 +704,8 @@ class _HomeScreenState extends State<HomeScreen> {
                                                   BorderRadius.circular(8.0),
                                               child: SvgPicture.asset(
                                                   "assets/logo4.svg",
-                                                  width: 175,
-                                                  height: 175,
+                                                  width: 150,
+                                                  height: 150,
                                                   fit: BoxFit.cover),
                                             ),
                                             ClipRRect(
@@ -710,8 +713,8 @@ class _HomeScreenState extends State<HomeScreen> {
                                                   BorderRadius.circular(8.0),
                                               child: SvgPicture.asset(
                                                   "assets/logo.svg",
-                                                  width: 175,
-                                                  height: 175,
+                                                  width: 150,
+                                                  height: 150,
                                                   fit: BoxFit.cover),
                                             ),
                                             ClipRRect(
@@ -719,8 +722,8 @@ class _HomeScreenState extends State<HomeScreen> {
                                                   BorderRadius.circular(8.0),
                                               child: SvgPicture.asset(
                                                   "assets/logo2.svg",
-                                                  width: 175,
-                                                  height: 175,
+                                                  width: 150,
+                                                  height: 150,
                                                   fit: BoxFit.cover),
                                             ),
                                           ]),
@@ -881,7 +884,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                       "Basée en Angleterre , la société HAVILA WAY a pour mission de mener à bien la gestion administrative et financière afin d’emmener l’activité médical à son momentum mais aussi envisager les voix et moyens pour exporter l’activité dans d’autres pays d’Afrique.",
                                       textAlign: TextAlign.justify,
                                       style: GoogleFonts.poppins(
-                                        fontSize: 22,
+                                        fontSize: 20,
                                         color:
                                             Color.fromARGB(255, 255, 255, 255),
                                       )),
@@ -893,20 +896,23 @@ class _HomeScreenState extends State<HomeScreen> {
                                   children: [
                                     Text("Nos laboratoires".toUpperCase(),
                                         style: GoogleFonts.poppins(
-                                            fontSize: 26,
+                                            fontSize: 24,
                                             color: Colors.white,
                                             fontWeight: FontWeight.bold)),
                                     Text(""),
-                                    Container(
-                                      width: size.width / 3,
-                                      child: Text(
-                                          "Toujours avec le même soin, et avec le souci de rester proche des prescripteurs et des patients. Qualité, rapidité, disponibilité et support médical forment le carré gagnant de nos laboratoires.",
-                                          textAlign: TextAlign.justify,
-                                          style: GoogleFonts.poppins(
-                                            fontSize: 22,
-                                            color: Color.fromARGB(
-                                                255, 255, 255, 255),
-                                          )),
+                                    Padding(
+                                      padding: const EdgeInsets.only(bottom:12.0),
+                                      child: Container(
+                                        width: size.width / 3,
+                                        child: Text(
+                                            "Toujours avec le même soin, et avec le souci de rester proche des prescripteurs et des patients. Qualité, rapidité, disponibilité et support médical forment le carré gagnant de nos laboratoires.",
+                                            textAlign: TextAlign.justify,
+                                            style: GoogleFonts.poppins(
+                                              fontSize: 20,
+                                              color: Color.fromARGB(
+                                                  255, 255, 255, 255),
+                                            )),
+                                      ),
                                     ),
                                   ],
                                 ),

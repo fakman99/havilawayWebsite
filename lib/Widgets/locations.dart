@@ -120,60 +120,7 @@ class _LocationState extends State<Location> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
-                          Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: Container(
-                              child: Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceEvenly,
-                                children: [
-                                  HoverCrossFadeWidget(
-                                      duration: Duration(milliseconds: 300),
-                                      firstChild: GestureDetector(
-                                        onTap: () {
-                                          html.window.location.href =
-                                              "https://www.instagram.com/claudejeanreynaud/";
-                                        },
-                                        child: Image.asset(
-                                          "assets/logo_insta_rose.png",
-                                          height: 32,
-                                          width: 32,
-                                          fit: BoxFit.contain,
-                                          color: Colors.white,
-                                        ),
-                                      ),
-                                      secondChild: GestureDetector(
-                                        onTap: () {
-                                          html.window.location.href =
-                                              "https://www.instagram.com/claudejeanreynaud/";
-                                        },
-                                        child: Image.asset(
-                                            "assets/logo_insta_noir.png",
-                                            height: 32,
-                                            width: 32,
-                                            fit: BoxFit.contain),
-                                      )).showCursorOnHover,
-                                  Padding(padding: EdgeInsets.all(4)),
-                                  GestureDetector(
-                                      onTap: () {
-                                        html.window.location.href =
-                                            "https://www.instagram.com/claudejeanreynaud/";
-                                      },
-                                      child: HoverCrossFadeWidget(
-                                        duration: Duration(milliseconds: 300),
-                                        firstChild: Text("@HAVILAWAY",
-                                            style: GoogleFonts.poppins(
-                                                fontSize: 16,
-                                                color: Colors.white)),
-                                        secondChild: Text("@HAVILAWAY",
-                                            style: GoogleFonts.poppins(
-                                              fontSize: 16,
-                                            )),
-                                      )).showCursorOnHover.moveUpPOnHover,
-                                ],
-                              ),
-                            ),
-                          ),
+                          
                           Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: Container(
@@ -236,6 +183,7 @@ class _LocationState extends State<Location> {
           ),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Text("Laissez-nous un message"),
               Container(
@@ -264,7 +212,7 @@ class _LocationState extends State<Location> {
                         formControlName: 'name',
                       ),
                       ReactiveTextField(
-                        decoration: InputDecoration(
+                        decoration: InputDecoration(  
                             hintText: "Prénom",
                             filled: true,
                             fillColor: Colors.white,

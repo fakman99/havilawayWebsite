@@ -279,6 +279,7 @@ class LocationMob extends StatelessWidget {
                                   color: Color.fromARGB(255, 255, 255, 255),
                                 ))),
                       ),
+                      Padding(padding: EdgeInsets.only(bottom: 50),child:(Text("")))
                     ],
                   ),
                 ),
